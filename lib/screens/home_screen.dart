@@ -14,27 +14,27 @@ class HomeScreen extends StatelessWidget {
     List<CategoryIcon> categories = [
       CategoryIcon(
         title: "Forest",
-        icon: Icons.forest, // Valid IconData
+        icon: Icons.forest,
         color: forestColor,
       ),
       CategoryIcon(
         title: "Camping",
-        icon: Icons.terrain, // Replace with an appropriate icon
+        icon: Icons.terrain,
         color: campingColor,
       ),
       CategoryIcon(
         title: "Boat trip",
-        icon: Icons.sailing, // Replace with an appropriate icon
+        icon: Icons.sailing,
         color: boatColor,
       ),
       CategoryIcon(
         title: "Hiking",
-        icon: Icons.hiking, // Replace with an appropriate icon
+        icon: Icons.hiking,
         color: campingColor,
       ),
       CategoryIcon(
         title: "World tour",
-        icon: Icons.travel_explore, // Replace with an appropriate icon
+        icon: Icons.travel_explore,
         color: forestColor,
       ),
     ];
