@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:mytravel/widgets/destination.dart';
+import 'package:mytravel/widgets/input_search.dart';
+import '../widgets/category.dart';
 import '/constants/colors.dart';
 import '/models/data.dart';
 
@@ -9,6 +11,34 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<CategoryIcon> categories = [
+      CategoryIcon(
+        title: "Forest",
+        icon: Icons.forest, // Valid IconData
+        color: forestColor,
+      ),
+      CategoryIcon(
+        title: "Camping",
+        icon: Icons.terrain, // Replace with an appropriate icon
+        color: campingColor,
+      ),
+      CategoryIcon(
+        title: "Boat trip",
+        icon: Icons.sailing, // Replace with an appropriate icon
+        color: boatColor,
+      ),
+      CategoryIcon(
+        title: "Hiking",
+        icon: Icons.hiking, // Replace with an appropriate icon
+        color: campingColor,
+      ),
+      CategoryIcon(
+        title: "World tour",
+        icon: Icons.travel_explore, // Replace with an appropriate icon
+        color: forestColor,
+      ),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -45,154 +75,85 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Padding(
-          padding: EdgeInsets.all(20.0),
-          child: Column(
-            children: [
-// Row 1 - Profile
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 30,
-                    backgroundImage: AssetImage("assets/images/profile.jpg"),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.menu,
-                    color: primaryColor,
-                  ),
-                ],
-              ),
-              SizedBox(height: 15),
-              // Row 2 - Point of Interest
-              Row(
-                children: [
-                  Text(
-                    "Point of Interest",
-                    style: TextStyle(
-                      fontSize: 25,
+      body: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+        ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Column(
+              children: [
+                // Row 1 - Profile
+                Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundImage: AssetImage("assets/images/profile.jpg"),
+                    ),
+                    Spacer(),
+                    Icon(
+                      Icons.menu,
                       color: primaryColor,
-                      fontWeight: FontWeight.w600,
                     ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 15),
-              // Row 3 - Search Bar
-              Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 20),
-                      decoration: BoxDecoration(
-                        color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Search",
-                          border: InputBorder.none,
-                          icon: Icon(Icons.search),
-                        ),
+                  ],
+                ),
+                SizedBox(height: 15),
+                // Row 2 - Point of Interest
+                Row(
+                  children: [
+                    Text(
+                      "Point of Interest",
+                      style:
+                          Theme.of(context).textTheme.headlineMedium!.copyWith(
+                                color: primaryColor,
+                                fontWeight: FontWeight.w600,
+                              ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 15),
+                // Row 3 - Search Bar
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Expanded(
+                      child: InputSearch(),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 15),
+                // Row 4 - Categories
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    for (int i = 0; i < categories.length; i++) categories[i]
+                  ],
+                ),
+                SizedBox(height: 15),
+                // Row 5 - Top Destination
+                Row(
+                  children: [
+                    Text(
+                      "Top Destinations",
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: primaryColor,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
-                  ),
-                  // SizedBox(width: 20),
-                  // Container(
-                  //   padding: EdgeInsets.all(15),
-                  //   decoration: BoxDecoration(
-                  //     color: primaryColor,
-                  //     borderRadius: BorderRadius.circular(20),
-                  //   ),
-                  //   child: Icon(
-                  //     Icons.tune,
-                  //     color: Colors.white,
-                  //   ),
-                  // ),
-                ],
-              ),
-              SizedBox(height: 15),
-              // Row 4 - Categories
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage:
-                            AssetImage("assets/images/travel-1.jpg"),
-                      ),
-                      Text("Forest")
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage:
-                            AssetImage("assets/images/travel-2.jpg"),
-                      ),
-                      Text("Camping")
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage:
-                            AssetImage("assets/images/travel-8.jpg"),
-                      ),
-                      Text("Boat trip")
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage:
-                            AssetImage("assets/images/travel-4.jpg"),
-                      ),
-                      Text("Hiking")
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundImage:
-                            AssetImage("assets/images/travel-1.jpg"),
-                      ),
-                      Text("World tour")
-                    ],
-                  ),
-                ],
-              ),
-              SizedBox(height: 15),
-              // Row 5 - Top Destination
-              Row(
-                children: [
-                  Text(
-                    "Top Destinations",
-                    style: TextStyle(
-                      fontSize: 25,
+                    Spacer(),
+                    Icon(
+                      Icons.tune,
+                      size: 25,
                       color: primaryColor,
-                      fontWeight: FontWeight.w600,
                     ),
-                  ),
-                  Spacer(),
-                  Icon(
-                    Icons.tune,
-                    size: 25,
-                    color: primaryColor,
-                  ),
-                ],
-              ),
-              // Row 6 - GridView count
-              SizedBox(height: 20),
-              GridView.count(
+                  ],
+                ),
+                // Row 6 - GridView count
+                SizedBox(height: 20),
+                GridView.count(
                   crossAxisCount: 2,
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
@@ -214,8 +175,10 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ),
                     );
-                  }).toList()),
-            ],
+                  }).toList(),
+                ),
+              ],
+            ),
           ),
         ),
       ),
