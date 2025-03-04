@@ -1,0 +1,154 @@
+Date : 2025-02-18 14:51:00
+Directory : /Users/noppanut/Projects/mytravel
+Total : 68 files,  2642 codes, 320 comments, 431 blanks, all 3393 lines
+
+Languages
++-----------------+------------+------------+------------+------------+------------+
+| language        | files      | code       | comment    | blank      | total      |
++-----------------+------------+------------+------------+------------+------------+
+| Dart            |         11 |        663 |         25 |         44 |        732 |
+| C++             |         16 |        540 |        131 |        189 |        860 |
+| XML             |         10 |        470 |         53 |         12 |        535 |
+| CMake           |          8 |        461 |          0 |         92 |        553 |
+| JSON            |          4 |        248 |          0 |          4 |        252 |
+| Gradle          |          3 |         69 |          6 |         15 |         90 |
+| Ruby            |          2 |         65 |          4 |         20 |         89 |
+| Swift           |          6 |         57 |          7 |         21 |         85 |
+| YAML            |          3 |         29 |         79 |         18 |        126 |
+| HTML            |          1 |         19 |         15 |          5 |         39 |
+| Markdown        |          2 |         13 |          0 |          9 |         22 |
+| Java Properties |          2 |          8 |          0 |          2 |         10 |
++-----------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |         68 |      2,642 |        320 |        431 |      3,393 |
+| . (Files)                                                                                       |          4 |         39 |         79 |         25 |        143 |
+| android                                                                                         |         12 |        143 |         57 |         26 |        226 |
+| android (Files)                                                                                 |          3 |         40 |          0 |          9 |         49 |
+| android/app                                                                                     |          8 |         98 |         57 |         16 |        171 |
+| android/app (Files)                                                                             |          1 |         32 |          6 |          7 |         45 |
+| android/app/src                                                                                 |          7 |         66 |         51 |          9 |        126 |
+| android/app/src/debug                                                                           |          1 |          3 |          4 |          1 |          8 |
+| android/app/src/main                                                                            |          5 |         60 |         43 |          7 |        110 |
+| android/app/src/main (Files)                                                                    |          1 |         34 |         11 |          1 |         46 |
+| android/app/src/main/res                                                                        |          4 |         26 |         32 |          6 |         64 |
+| android/app/src/main/res/drawable                                                               |          1 |          4 |          7 |          2 |         13 |
+| android/app/src/main/res/drawable-v21                                                           |          1 |          4 |          7 |          2 |         13 |
+| android/app/src/main/res/values                                                                 |          1 |          9 |          9 |          1 |         19 |
+| android/app/src/main/res/values-night                                                           |          1 |          9 |          9 |          1 |         19 |
+| android/app/src/profile                                                                         |          1 |          3 |          4 |          1 |          8 |
+| android/gradle                                                                                  |          1 |          5 |          0 |          1 |          6 |
+| android/gradle/wrapper                                                                          |          1 |          5 |          0 |          1 |          6 |
+| ios                                                                                             |          9 |        261 |          7 |         23 |        291 |
+| ios (Files)                                                                                     |          1 |         32 |          3 |         10 |         45 |
+| ios/Runner                                                                                      |          7 |        222 |          2 |          9 |        233 |
+| ios/Runner (Files)                                                                              |          2 |         13 |          0 |          3 |         16 |
+| ios/Runner/Assets.xcassets                                                                      |          3 |        148 |          0 |          4 |        152 |
+| ios/Runner/Assets.xcassets/AppIcon.appiconset                                                   |          1 |        122 |          0 |          1 |        123 |
+| ios/Runner/Assets.xcassets/LaunchImage.imageset                                                 |          2 |         26 |          0 |          3 |         29 |
+| ios/Runner/Base.lproj                                                                           |          2 |         61 |          2 |          2 |         65 |
+| ios/RunnerTests                                                                                 |          1 |          7 |          2 |          4 |         13 |
+| lib                                                                                             |         10 |        649 |         15 |         37 |        701 |
+| lib (Files)                                                                                     |          1 |         27 |          0 |          5 |         32 |
+| lib/constants                                                                                   |          1 |          6 |          0 |          3 |          9 |
+| lib/models                                                                                      |          1 |         74 |          0 |          3 |         77 |
+| lib/screens                                                                                     |          3 |        350 |          7 |         13 |        370 |
+| lib/widgets                                                                                     |          4 |        192 |          8 |         13 |        213 |
+| linux                                                                                           |          9 |        325 |         37 |         92 |        454 |
+| linux (Files)                                                                                   |          1 |        104 |          0 |         25 |        129 |
+| linux/flutter                                                                                   |          4 |        105 |          9 |         27 |        141 |
+| linux/runner                                                                                    |          4 |        116 |         28 |         40 |        184 |
+| macos                                                                                           |          7 |        482 |          6 |         27 |        515 |
+| macos (Files)                                                                                   |          1 |         33 |          1 |         10 |         44 |
+| macos/Flutter                                                                                   |          1 |          8 |          3 |          4 |         15 |
+| macos/Runner                                                                                    |          4 |        434 |          0 |          9 |        443 |
+| macos/Runner (Files)                                                                            |          2 |         23 |          0 |          7 |         30 |
+| macos/Runner/Assets.xcassets                                                                    |          1 |         68 |          0 |          1 |         69 |
+| macos/Runner/Assets.xcassets/AppIcon.appiconset                                                 |          1 |         68 |          0 |          1 |         69 |
+| macos/Runner/Base.lproj                                                                         |          1 |        343 |          0 |          1 |        344 |
+| macos/RunnerTests                                                                               |          1 |          7 |          2 |          4 |         13 |
+| test                                                                                            |          1 |         14 |         10 |          7 |         31 |
+| web                                                                                             |          2 |         54 |         15 |          6 |         75 |
+| windows                                                                                         |         14 |        675 |         94 |        188 |        957 |
+| windows (Files)                                                                                 |          1 |         89 |          0 |         20 |        109 |
+| windows/flutter                                                                                 |          4 |        124 |          9 |         29 |        162 |
+| windows/runner                                                                                  |          9 |        462 |         85 |        139 |        686 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| filename                                                                                        | language        | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| /Users/noppanut/Projects/mytravel/README.md                                                     | Markdown        |         10 |          0 |          7 |         17 |
+| /Users/noppanut/Projects/mytravel/analysis_options.yaml                                         | YAML            |          3 |         22 |          4 |         29 |
+| /Users/noppanut/Projects/mytravel/android/app/build.gradle                                      | Gradle          |         32 |          6 |          7 |         45 |
+| /Users/noppanut/Projects/mytravel/android/app/src/debug/AndroidManifest.xml                     | XML             |          3 |          4 |          1 |          8 |
+| /Users/noppanut/Projects/mytravel/android/app/src/main/AndroidManifest.xml                      | XML             |         34 |         11 |          1 |         46 |
+| /Users/noppanut/Projects/mytravel/android/app/src/main/res/drawable-v21/launch_background.xml   | XML             |          4 |          7 |          2 |         13 |
+| /Users/noppanut/Projects/mytravel/android/app/src/main/res/drawable/launch_background.xml       | XML             |          4 |          7 |          2 |         13 |
+| /Users/noppanut/Projects/mytravel/android/app/src/main/res/values-night/styles.xml              | XML             |          9 |          9 |          1 |         19 |
+| /Users/noppanut/Projects/mytravel/android/app/src/main/res/values/styles.xml                    | XML             |          9 |          9 |          1 |         19 |
+| /Users/noppanut/Projects/mytravel/android/app/src/profile/AndroidManifest.xml                   | XML             |          3 |          4 |          1 |          8 |
+| /Users/noppanut/Projects/mytravel/android/build.gradle                                          | Gradle          |         16 |          0 |          3 |         19 |
+| /Users/noppanut/Projects/mytravel/android/gradle.properties                                     | Java Properties |          3 |          0 |          1 |          4 |
+| /Users/noppanut/Projects/mytravel/android/gradle/wrapper/gradle-wrapper.properties              | Java Properties |          5 |          0 |          1 |          6 |
+| /Users/noppanut/Projects/mytravel/android/settings.gradle                                       | Gradle          |         21 |          0 |          5 |         26 |
+| /Users/noppanut/Projects/mytravel/devtools_options.yaml                                         | YAML            |          3 |          0 |          1 |          4 |
+| /Users/noppanut/Projects/mytravel/ios/Podfile                                                   | Ruby            |         32 |          3 |         10 |         45 |
+| /Users/noppanut/Projects/mytravel/ios/Runner/AppDelegate.swift                                  | Swift           |         12 |          0 |          2 |         14 |
+| /Users/noppanut/Projects/mytravel/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json   | JSON            |        122 |          0 |          1 |        123 |
+| /Users/noppanut/Projects/mytravel/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json | JSON            |         23 |          0 |          1 |         24 |
+| /Users/noppanut/Projects/mytravel/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md     | Markdown        |          3 |          0 |          2 |          5 |
+| /Users/noppanut/Projects/mytravel/ios/Runner/Base.lproj/LaunchScreen.storyboard                 | XML             |         36 |          1 |          1 |         38 |
+| /Users/noppanut/Projects/mytravel/ios/Runner/Base.lproj/Main.storyboard                         | XML             |         25 |          1 |          1 |         27 |
+| /Users/noppanut/Projects/mytravel/ios/Runner/Runner-Bridging-Header.h                           | C++             |          1 |          0 |          1 |          2 |
+| /Users/noppanut/Projects/mytravel/ios/RunnerTests/RunnerTests.swift                             | Swift           |          7 |          2 |          4 |         13 |
+| /Users/noppanut/Projects/mytravel/lib/constants/colors.dart                                     | Dart            |          6 |          0 |          3 |          9 |
+| /Users/noppanut/Projects/mytravel/lib/main.dart                                                 | Dart            |         27 |          0 |          5 |         32 |
+| /Users/noppanut/Projects/mytravel/lib/models/data.dart                                          | Dart            |         74 |          0 |          3 |         77 |
+| /Users/noppanut/Projects/mytravel/lib/screens/home_screen.dart                                  | Dart            |        171 |          6 |          4 |        181 |
+| /Users/noppanut/Projects/mytravel/lib/screens/onboarding_screen.dart                            | Dart            |         95 |          1 |          7 |        103 |
+| /Users/noppanut/Projects/mytravel/lib/screens/sign_up_screen.dart                               | Dart            |         84 |          0 |          2 |         86 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/category.dart                                     | Dart            |         34 |          1 |          3 |         38 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/destination.dart                                  | Dart            |         89 |          6 |          4 |         99 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/input_search.dart                                 | Dart            |         29 |          0 |          3 |         32 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/my_text_field.dart                                | Dart            |         40 |          1 |          3 |         44 |
+| /Users/noppanut/Projects/mytravel/linux/CMakeLists.txt                                          | CMake           |        104 |          0 |         25 |        129 |
+| /Users/noppanut/Projects/mytravel/linux/flutter/CMakeLists.txt                                  | CMake           |         79 |          0 |         10 |         89 |
+| /Users/noppanut/Projects/mytravel/linux/flutter/generated_plugin_registrant.cc                  | C++             |          3 |          4 |          5 |         12 |
+| /Users/noppanut/Projects/mytravel/linux/flutter/generated_plugin_registrant.h                   | C++             |          5 |          5 |          6 |         16 |
+| /Users/noppanut/Projects/mytravel/linux/flutter/generated_plugins.cmake                         | CMake           |         18 |          0 |          6 |         24 |
+| /Users/noppanut/Projects/mytravel/linux/runner/CMakeLists.txt                                   | CMake           |         21 |          0 |          6 |         27 |
+| /Users/noppanut/Projects/mytravel/linux/runner/main.cc                                          | C++             |          5 |          0 |          2 |          7 |
+| /Users/noppanut/Projects/mytravel/linux/runner/my_application.cc                                | C++             |         83 |         21 |         27 |        131 |
+| /Users/noppanut/Projects/mytravel/linux/runner/my_application.h                                 | C++             |          7 |          7 |          5 |         19 |
+| /Users/noppanut/Projects/mytravel/macos/Flutter/GeneratedPluginRegistrant.swift                 | Swift           |          8 |          3 |          4 |         15 |
+| /Users/noppanut/Projects/mytravel/macos/Podfile                                                 | Ruby            |         33 |          1 |         10 |         44 |
+| /Users/noppanut/Projects/mytravel/macos/Runner/AppDelegate.swift                                | Swift           |         11 |          0 |          3 |         14 |
+| /Users/noppanut/Projects/mytravel/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json | JSON            |         68 |          0 |          1 |         69 |
+| /Users/noppanut/Projects/mytravel/macos/Runner/Base.lproj/MainMenu.xib                          | XML             |        343 |          0 |          1 |        344 |
+| /Users/noppanut/Projects/mytravel/macos/Runner/MainFlutterWindow.swift                          | Swift           |         12 |          0 |          4 |         16 |
+| /Users/noppanut/Projects/mytravel/macos/RunnerTests/RunnerTests.swift                           | Swift           |          7 |          2 |          4 |         13 |
+| /Users/noppanut/Projects/mytravel/pubspec.yaml                                                  | YAML            |         23 |         57 |         13 |         93 |
+| /Users/noppanut/Projects/mytravel/test/widget_test.dart                                         | Dart            |         14 |         10 |          7 |         31 |
+| /Users/noppanut/Projects/mytravel/web/index.html                                                | HTML            |         19 |         15 |          5 |         39 |
+| /Users/noppanut/Projects/mytravel/web/manifest.json                                             | JSON            |         35 |          0 |          1 |         36 |
+| /Users/noppanut/Projects/mytravel/windows/CMakeLists.txt                                        | CMake           |         89 |          0 |         20 |        109 |
+| /Users/noppanut/Projects/mytravel/windows/flutter/CMakeLists.txt                                | CMake           |         98 |          0 |         12 |        110 |
+| /Users/noppanut/Projects/mytravel/windows/flutter/generated_plugin_registrant.cc                | C++             |          3 |          4 |          5 |         12 |
+| /Users/noppanut/Projects/mytravel/windows/flutter/generated_plugin_registrant.h                 | C++             |          5 |          5 |          6 |         16 |
+| /Users/noppanut/Projects/mytravel/windows/flutter/generated_plugins.cmake                       | CMake           |         18 |          0 |          6 |         24 |
+| /Users/noppanut/Projects/mytravel/windows/runner/CMakeLists.txt                                 | CMake           |         34 |          0 |          7 |         41 |
+| /Users/noppanut/Projects/mytravel/windows/runner/flutter_window.cpp                             | C++             |         49 |          7 |         16 |         72 |
+| /Users/noppanut/Projects/mytravel/windows/runner/flutter_window.h                               | C++             |         20 |          5 |          9 |         34 |
+| /Users/noppanut/Projects/mytravel/windows/runner/main.cpp                                       | C++             |         30 |          4 |         10 |         44 |
+| /Users/noppanut/Projects/mytravel/windows/runner/resource.h                                     | C++             |          9 |          6 |          2 |         17 |
+| /Users/noppanut/Projects/mytravel/windows/runner/utils.cpp                                      | C++             |         54 |          2 |         10 |         66 |
+| /Users/noppanut/Projects/mytravel/windows/runner/utils.h                                        | C++             |          8 |          6 |          6 |         20 |
+| /Users/noppanut/Projects/mytravel/windows/runner/win32_window.cpp                               | C++             |        210 |         24 |         55 |        289 |
+| /Users/noppanut/Projects/mytravel/windows/runner/win32_window.h                                 | C++             |         48 |         31 |         24 |        103 |
+| Total                                                                                           |                 |      2,642 |        320 |        431 |      3,393 |
++-------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+

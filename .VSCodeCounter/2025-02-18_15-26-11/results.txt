@@ -1,0 +1,39 @@
+Date : 2025-02-18 15:26:11
+Directory : /Users/noppanut/Projects/mytravel/lib
+Total : 10 files,  707 codes, 15 comments, 37 blanks, all 759 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Dart     |         10 |        707 |         15 |         37 |        759 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                 | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                    |         10 |        707 |         15 |         37 |        759 |
+| . (Files)                                                            |          1 |         27 |          0 |          5 |         32 |
+| constants                                                            |          1 |          6 |          0 |          3 |          9 |
+| models                                                               |          1 |         74 |          0 |          3 |         77 |
+| screens                                                              |          3 |        408 |          7 |         13 |        428 |
+| widgets                                                              |          4 |        192 |          8 |         13 |        213 |
++----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                             | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/noppanut/Projects/mytravel/lib/constants/colors.dart          | Dart     |          6 |          0 |          3 |          9 |
+| /Users/noppanut/Projects/mytravel/lib/main.dart                      | Dart     |         27 |          0 |          5 |         32 |
+| /Users/noppanut/Projects/mytravel/lib/models/data.dart               | Dart     |         74 |          0 |          3 |         77 |
+| /Users/noppanut/Projects/mytravel/lib/screens/home_screen.dart       | Dart     |        171 |          6 |          4 |        181 |
+| /Users/noppanut/Projects/mytravel/lib/screens/onboarding_screen.dart | Dart     |         95 |          1 |          7 |        103 |
+| /Users/noppanut/Projects/mytravel/lib/screens/sign_up_screen.dart    | Dart     |        142 |          0 |          2 |        144 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/category.dart          | Dart     |         34 |          1 |          3 |         38 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/destination.dart       | Dart     |         89 |          6 |          4 |         99 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/input_search.dart      | Dart     |         29 |          0 |          3 |         32 |
+| /Users/noppanut/Projects/mytravel/lib/widgets/my_text_field.dart     | Dart     |         40 |          1 |          3 |         44 |
+| Total                                                                |          |        707 |         15 |         37 |        759 |
++----------------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629942897511",
+    "project_id": "fultterauth-1aecc",
+    "storage_bucket": "fultterauth-1aecc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629942897511:android:33740ea579531942f3fdc2",
+        "android_client_info": {
+          "package_name": "com.example.mytravel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJNVenvbwXyh8EsUyoEYfUJZ4i_mpsm_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,13 +1,55 @@
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:mytravel/screens/onboarding_screen.dart';
 import 'package:mytravel/widgets/destination.dart';
 import 'package:mytravel/widgets/input_search.dart';
 import '../widgets/category.dart';
 import '/constants/colors.dart';
-import '/models/data.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  List destinaitonAPI = [];
+  bool isLoading = true;
+
+  signOut() async {
+    await FirebaseAuth.instance.signOut();
+    // ignore: use_build_context_synchronously
+    Navigator.push(
+      // ignore: use_build_context_synchronously
+      context,
+      MaterialPageRoute(
+        builder: (context) => OnBoardingScreen(),
+      ),
+    );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    fetchData();
+  }
+
+  Future<void> fetchData() async {
+    final response = await http.get(Uri.parse("http://localhost:3000/items"));
+    if (response.statusCode == 200) {
+      setState(() {
+        destinaitonAPI = json.decode(response.body);
+        isLoading = false;
+        debugPrint("Get destination successful");
+      });
+    } else {
+      throw Exception("Failed to load data");
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,11 +86,11 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
+          onPressed: () {},
           icon: Icon(
             Icons.menu,
             color: primaryColor,
           ),
-          onPressed: () {},
         ),
         title: Center(
           child: Text("Travel App",
@@ -59,13 +101,6 @@ class HomeScreen extends StatelessWidget {
               )),
         ),
         actions: [
-          IconButton(
-            icon: Icon(
-              Icons.search,
-              color: primaryColor,
-            ),
-            onPressed: () {},
-          ),
           IconButton(
             icon: Icon(
               Icons.notifications,
@@ -93,9 +128,12 @@ class HomeScreen extends StatelessWidget {
                       backgroundImage: AssetImage("assets/images/profile.jpg"),
                     ),
                     Spacer(),
-                    Icon(
-                      Icons.menu,
-                      color: primaryColor,
+                    InkWell(
+                      onTap: signOut,
+                      child: Icon(
+                        Icons.exit_to_app,
+                        color: primaryColor,
+                      ),
                     ),
                   ],
                 ),
@@ -154,29 +192,29 @@ class HomeScreen extends StatelessWidget {
                 // Row 6 - GridView count
                 SizedBox(height: 20),
                 GridView.count(
-                  crossAxisCount: 2,
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
-                  childAspectRatio: 0.75,
-                  crossAxisSpacing: 24,
-                  mainAxisSpacing: 24,
-                  children: destinations.map((e) {
-                    return AnimationConfiguration.staggeredGrid(
-                      position: destinations.indexOf(e),
-                      columnCount: 2,
-                      child: SlideAnimation(
-                        child: FadeInAnimation(
-                          child: DestinationWidget(
-                            name: e.name,
-                            image: e.image,
-                            rate: e.rate,
-                            location: e.location,
+                    crossAxisCount: 2,
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
+                    childAspectRatio: 0.75,
+                    crossAxisSpacing: 24,
+                    mainAxisSpacing: 24,
+                    children: List.generate(destinaitonAPI.length, (index) {
+                      return AnimationConfiguration.staggeredGrid(
+                        position: index,
+                        duration: const Duration(milliseconds: 375),
+                        columnCount: 2,
+                        child: ScaleAnimation(
+                          child: FadeInAnimation(
+                            child: DestinationWidget(
+                              name: destinaitonAPI[index]["name"],
+                              image: destinaitonAPI[index]["image"],
+                              rate: destinaitonAPI[index]["rate"],
+                              location: destinaitonAPI[index]["location"],
+                            ),
                           ),
                         ),
-                      ),
-                    );
-                  }).toList(),
-                ),
+                      );
+                    })),
               ],
             ),
           ),
